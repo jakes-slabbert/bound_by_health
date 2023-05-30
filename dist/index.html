@@ -28,7 +28,7 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#approach">Approach</a></li>
                         <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
                         <li class="nav-item"><a class="nav-link" href="#signup">Contact</a></li>
                     </ul>
@@ -37,32 +37,28 @@
         </nav>
         <!-- Masthead-->
         <header class="masthead">
-            <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
+            <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-left">
                 <div class="d-flex justify-content-center">
                     <div class="text-center">
-                        <h1 class="mx-auto my-0 text-uppercase">Bound by Health</h1>
-                        <h2 class="text-white-50 mx-auto mt-2 mb-5">Tell us how we can help you.</h2>
-                        <a class="btn btn-primary" onclick="goToAbout()">Build muscle</a>
-                        <a class="btn btn-primary" onclick="goToAbout()">Weightloss</a>
-                        <a class="btn btn-primary" onclick="goToAbout()">Healthy lifestyle</a>
+                        <h1 class="mx-auto my-0 text-uppercase">Bound by</h1>
+                        <h1 class="mx-auto my-0 text-uppercase">Health</h1>
+                        <h2 class="text-black-60 mx-auto mt-2 mb-5">Let us help you achieve your goals. Tailored for you, our expert advice will have you feeling great in no time. Choose one of the following to start:</h2>
+                        <a class="btn btn-primary" onclick="goToApproach(0)" href="#approach">Build muscle</a>
+                        <a class="btn btn-primary" onclick="goToApproach(2)" href="#approach">Healthy lifestyle</a>
+                        <a class="btn btn-primary" onclick="goToApproach(1)" href="#approach">Weight loss</a>
                     </div>
                 </div>
             </div>
         </header>
-        <!-- About-->
-        <section class="about-section text-center" id="about">
-            <div class="container px-4 px-lg-5">
-                <div class="row gx-4 gx-lg-5 justify-content-center">
-                    <div class="col-lg-8">
-                        <h2 class="text-white mb-4">Built with Bootstrap 5</h2>
-                        <p class="text-white-50" id="about-text">
-                            Grayscale is a free Bootstrap theme created by Start Bootstrap. It can be yours right now, simply download the template on
-                            <a href="https://startbootstrap.com/theme/grayscale/">the preview page.</a>
-                            The theme is open source, and you can use it for any purpose, personal or commercial.
-                        </p>
+        <!-- Approach-->
+        <section class="about-section text-center" id="approach">
+            <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-left">
+                <div class="d-flex justify-content-left">
+                    <div class="text-left">
+                        <h1 id="about-heading">Our approach</h1>
+                        <h2 id="about-text">Here at Bound by Health we take a holistic approach to your health and fitness. We know from exprience that it's not just excersize that matters, but also what we eat, drink, even our sleep plays a vital role. We will help you find the right balance and the best way forward.</h2>
                     </div>
                 </div>
-                <img class="img-fluid" src="assets/img/ipad.png" alt="..." />
             </div>
         </section>
         <!-- Projects-->
@@ -70,7 +66,7 @@
             <div class="container px-4 px-lg-5">
                 <!-- Featured Project Row-->
                 <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
-                    <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="assets/img/bg-masthead.jpg" alt="..." /></div>
+                    <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="assets/img/masthead-three.jpg" alt="..." /></div>
                     <div class="col-xl-4 col-lg-5">
                         <div class="featured-text text-center text-lg-left">
                             <h4>Shoreline</h4>
@@ -80,7 +76,7 @@
                 </div>
                 <!-- Project One Row-->
                 <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
-                    <div class="col-lg-6"><img class="img-fluid" src="assets/img/demo-image-01.jpg" alt="..." /></div>
+                    <div class="col-lg-6"><img class="img-fluid" src="assets/img/better-life.jpg" alt="..." /></div>
                     <div class="col-lg-6">
                         <div class="bg-black text-center h-100 project">
                             <div class="d-flex h-100">
@@ -94,7 +90,7 @@
                 </div>
                 <!-- Project Two Row-->
                 <div class="row gx-0 justify-content-center">
-                    <div class="col-lg-6"><img class="img-fluid" src="assets/img/demo-image-02.jpg" alt="..." /></div>
+                    <div class="col-lg-6"><img class="img-fluid" src="assets/img/eating-healthy.jpg" alt="..." /></div>
                     <div class="col-lg-6 order-lg-first">
                         <div class="bg-black text-center h-100 project">
                             <div class="d-flex h-100">

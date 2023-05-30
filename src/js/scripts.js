@@ -48,7 +48,46 @@ window.addEventListener('DOMContentLoaded', event => {
 
 });
 
-function goToAbout()
-{
-    document.getElementById('about-text').innerText = 'Button clicked and now we have this text.';
+function goToAbout(type) {
+    switch (type) {
+        case 0:
+            {
+                // Build muscle
+                setAboutText(
+                    'Building muscle helps protect your joints from injury. It also helps you to maintain flexibility and balance, helping you stay independent as you get older. As you gain muscle, your body starts to burn more kilojoules at rest. Let us help you find the best route to the guns you would like to have.',
+                    'Build muscle'
+                );
+                break;
+            }
+        case 1:
+            {
+                // Weight loss
+                setAboutText(
+                    'Modest weight loss of 5% to 10% of your total body weight is likely to produce health benefits, such as improvements in blood pressure, blood cholesterol, and blood sugars. At Bound by Health, we know every bod is different and tailor your program to you and your body.',
+                    'Weight loss'
+                );
+                break;
+            }
+        case 2:
+            {
+                // Healthy lifestyle
+                setAboutText(
+                    'A healthy lifestyle encompassed our entire lives. Here at Bound by Health, we tailor your excersize routines and nutritional intake to your needs. Some extensive experience in the almagamation of these fields has always yielded better and better results for our clients.',
+                    'Healthy lifstyle'
+                );
+                break;
+            }
+        default: throw new Error('Type was not defined correctly.');
+    }
+}
+
+function setAboutText(text, headingText) {
+    if (text === undefined)
+        throw new Error('Text is not defined.');
+
+    if (headingText === undefined)
+        throw new Error('Heading text is not defined.');
+    
+    document.getElementById('about-text').innerText = text;
+    document.getElementById('about-heading').innerText = headingText;
 }

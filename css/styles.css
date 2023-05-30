@@ -10981,7 +10981,7 @@ body {
 
 #mainNav {
   min-height: 3.5rem;
-  background-color: #fff;
+  background-color: transparent;
 }
 #mainNav .navbar-toggler {
   font-size: 80%;
@@ -10992,6 +10992,9 @@ body {
 #mainNav .navbar-toggler:focus {
   outline: none;
 }
+#mainNav .navbar-collapse {
+  background-color: #fff;
+}
 #mainNav .navbar-brand {
   color: #000;
   font-weight: 700;
@@ -11000,11 +11003,33 @@ body {
 #mainNav .navbar-nav .nav-item:hover {
   color: fade(#fff, 80%);
   outline: none;
-  background-color: transparent;
+  background-color: #fff;
 }
 #mainNav .navbar-nav .nav-item:active, #mainNav .navbar-nav .nav-item:focus {
   outline: none;
-  background-color: transparent;
+  background-color: #fff;
+}
+#mainNav .navbar-brand {
+  color: #000;
+}
+#mainNav .nav-link {
+  color: #000;
+  padding: 1.5rem 1.5rem 1.25rem;
+  border-bottom: 0.1rem solid transparent;
+}
+#mainNav .nav-link:hover {
+  color: #7ed957;
+}
+#mainNav .nav-link:active {
+  color: #55ba2a;
+}
+#mainNav .nav-link.active {
+  color: #7ed957;
+  outline: none;
+  border-bottom: 0.1rem solid #7ed957;
+}
+#mainNav.navbar-shrink {
+  background-color: #fff;
 }
 @media (min-width: 992px) {
   #mainNav {
@@ -11018,6 +11043,9 @@ body {
     padding: 0.5rem 0;
     color: #7ed957;
   }
+  #mainNav .navbar-collapse {
+    background-color: transparent;
+  }
   #mainNav .nav-link {
     transition: none;
     padding: 2rem 1.5rem;
@@ -11029,27 +11057,11 @@ body {
   #mainNav .nav-link:active {
     color: #7ed957;
   }
-  #mainNav.navbar-shrink {
-    background-color: #fff;
+  #mainNav .navbar-nav .nav-item:hover {
+    background-color: transparent;
   }
-  #mainNav.navbar-shrink .navbar-brand {
-    color: #000;
-  }
-  #mainNav.navbar-shrink .nav-link {
-    color: #000;
-    padding: 1.5rem 1.5rem 1.25rem;
-    border-bottom: 0.25rem solid transparent;
-  }
-  #mainNav.navbar-shrink .nav-link:hover {
-    color: #7ed957;
-  }
-  #mainNav.navbar-shrink .nav-link:active {
-    color: #55ba2a;
-  }
-  #mainNav.navbar-shrink .nav-link.active {
-    color: #7ed957;
-    outline: none;
-    border-bottom: 0.25rem solid #7ed957;
+  #mainNav .navbar-nav .nav-item:active, #mainNav .navbar-nav .nav-item:focus {
+    background-color: transparent;
   }
 }
 
@@ -11128,11 +11140,9 @@ body {
 .about-section {
   position: relative;
   overflow: hidden;
-  padding-top: 10rem;
-  min-height: 35rem;
   background-size: contain;
   height: 100vh;
-  padding: 0;
+  padding: 5rem 0 0 0;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 10%, rgba(0, 0, 0, 0.4) 45%, rgba(235, 235, 235, 0.3) 100%);
   background-position: center;
   background-repeat: no-repeat;

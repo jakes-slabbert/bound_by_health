@@ -9,6 +9,8 @@
         "build:scripts": "node scripts/build-scripts.js",
         "build:scss": "node scripts/build-scss.js",
         "clean": "node scripts/clean.js",
+        "build-gh": "npm run build --base-href=https://jakes-slabbert.github.io/bound_by_health/",
+        "deploy-gh": "ngh --no-silent -d dist/ --repo=https://github.com/jakes-slabbert/bound_by_health.git",
         "start": "npm run build && node scripts/start.js",
         "start:debug": "npm run build && node scripts/start-debug.js"
     },

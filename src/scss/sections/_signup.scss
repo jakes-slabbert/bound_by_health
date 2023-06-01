@@ -7,8 +7,7 @@
     background: linear-gradient(to bottom,
         #{fade-out($black, 0.9)} 0%,
         #{fade-out($black, 0.5)} 75%,
-        $black 100%),
-    url("../assets/img/bg-signup.jpg");
+        $black 100%);
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: scroll;

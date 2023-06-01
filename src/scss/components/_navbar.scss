@@ -4,7 +4,7 @@
 
 #mainNav {
     min-height: 3.5rem;
-    background-color: $white;
+    background-color: transparent;
 
     .navbar-toggler {
         font-size: 80%;
@@ -15,6 +15,10 @@
         &:focus {
             outline: none;
         }
+    }
+
+    .navbar-collapse {
+        background-color: $white;
     }
 
     .navbar-brand {
@@ -28,15 +32,44 @@
             &:hover {
                 color: fade($white, 80%);
                 outline: none;
-                background-color: transparent;
+                background-color: $white;
             }
 
             &:active,
             &:focus {
                 outline: none;
-                background-color: transparent;
+                background-color: $white;
             }
         }
+    }
+
+    .navbar-brand {
+        color: $black;
+    }
+
+    .nav-link {
+        color: $black;
+
+        padding: 1.5rem 1.5rem 1.25rem;
+        border-bottom: 0.1rem solid transparent;
+
+        &:hover {
+            color: $primary;
+        }
+
+        &:active {
+            color: darken($primary, 15%);
+        }
+
+        &.active {
+            color: $primary;
+            outline: none;
+            border-bottom: 0.1rem solid $primary;
+        }
+    }
+
+    &.navbar-shrink {
+        background-color: $white;
     }
 
     @include media-breakpoint-up(lg) {
@@ -49,6 +82,10 @@
         .navbar-brand {
             padding: 0.5rem 0;
             color: $primary;
+        }
+
+        .navbar-collapse {
+            background-color: transparent;
         }
 
         .nav-link {
@@ -65,30 +102,15 @@
             }
         }
 
-        &.navbar-shrink {
-            background-color: $white;
-
-            .navbar-brand {
-                color: $black;
-            }
-
-            .nav-link {
-                color: $black;
-                padding: 1.5rem 1.5rem 1.25rem;
-                border-bottom: 0.25rem solid transparent;
-
+        .navbar-nav {
+            .nav-item {
                 &:hover {
-                    color: $primary;
+                    background-color: transparent;
                 }
-
-                &:active {
-                    color: darken($primary, 15%);
-                }
-
-                &.active {
-                    color: $primary;
-                    outline: none;
-                    border-bottom: 0.25rem solid $primary;
+    
+                &:active,
+                &:focus {
+                    background-color: transparent;
                 }
             }
         }

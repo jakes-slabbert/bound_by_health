@@ -28,11 +28,11 @@
         animation: animated-gradient 4s infinite alternate-reverse;
     }
 
-    @keyframes animated-gradient{
-        to{
-          background-position: 200%;
+    @keyframes animated-gradient {
+        to {
+            background-position: 200%;
         }
-      }
+    }
 
     h2 {
         max-width: 20rem;

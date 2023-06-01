@@ -32,7 +32,7 @@ html(lang='en')
             .container.px-4.px-lg-5
                 a.navbar-brand(href='#page-top') Bound by Health
                 button.navbar-toggler.navbar-toggler-right(type='button', data-bs-toggle='collapse', data-bs-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
-                    | Menu
+                    |
                     i.fas.fa-bars
                 #navbarResponsive.collapse.navbar-collapse
                     ul.navbar-nav.ms-auto
@@ -57,12 +57,13 @@ html(lang='en')
 
         // Approach
         section#approach.about-section.text-center
-            .container.px-4.px-lg-5.d-flex.h-100.align-items-center.justify-content-left
+            .container.px-4.px-lg-5.d-flex.h-100.align-items-start.justify-content-left
                 .d-flex.justify-content-left
                     .text-left
-                        h1#about-heading Our approach
-                        h2#about-text Here at Bound by Health we take a holistic approach to your health and fitness. We know from exprience that it's not just excersize that matters,  but also what we eat, drink, even our sleep plays a vital role. We will help you find the right balance and the best way forward. 
-                //- img#slide.img-fluid(src='assets/img/food_1.png', alt='...')
+                        h1#approach-heading Our approach
+                        h2#approach-text Here at Bound by Health we take a holistic approach to your health and fitness. We know from exprience that it's not just excersize that matters,  but also what we eat, drink, even our sleep plays a vital role. We will help you find the right balance and the best way forward. 
+                img#approach-img.img-fluid(alt='...')
+                //- NB - THIS IS THE DEFAULT img.img-fluid(src='assets/img/approach_7.png', alt='...') 
                 //- img#slide_left.img-fluid(src='assets/img/supplement.png', alt='...')
                 //- Different images needed per button selection.
 

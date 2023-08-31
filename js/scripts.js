@@ -118,3 +118,31 @@ function setApproachText(text, headingText) {
     document.getElementById('approach-text').innerText = text;
     document.getElementById('approach-heading').innerText = headingText;
 }
+
+function getInTouch()
+{
+    // Some refinement needed for user
+    window.location.href = "mailto:mail@example.org?subject=" + document.getElementById('approach-heading').innerText + "&body=" + document.getElementById('approach-text').innerText;
+}
+
+window.addEventListener('scroll', animation);
+
+function animation(e) {
+
+    var approach_section_top = document.getElementById('approach-container');
+    var approach_section_bottom = document.getElementById('approach-img');
+    // Find the position of the section
+    var approach_section_top_pos = approach_section_top.offsetTop;
+    var approach_section_bottom_pos = approach_section_bottom.offsetTop;
+
+    var window_pos = window.pageYOffset;
+    // When the page reaches the top of the approach section, the section should slide in.
+    if (window_pos > approach_section_top_pos) {
+        approach_section_top.classList.add('animation-in');
+    }
+    // When the page reaches the end of the approach section, the classes need to be removed, and slided out again.
+    if (window_pos > approach_section_bottom_pos) {
+        approach_section_top.classList.remove('animation-in');
+        approach_section_top.classList.add('animation-out');
+    }
+}

@@ -11142,7 +11142,7 @@ body {
   overflow: hidden;
   background-size: contain;
   height: 100vh;
-  padding: 3rem 0 0 0;
+  padding: 2rem 0 0 0;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 10%, rgba(0, 0, 0, 0.4) 45%, rgba(235, 235, 235, 0.3) 100%);
   background-position: center;
   background-repeat: no-repeat;
@@ -11152,9 +11152,16 @@ body {
 }
 .about-section .container {
   flex-direction: column;
+  position: relative;
+  top: 0;
+  left: -100vw;
+  -webkit-animation: slide 0.8s forwards;
+  -webkit-animation-delay: 1s;
+  animation: slide 0.8s forwards;
+  animation-delay: 1s;
 }
 .about-section .img-fluid {
-  max-width: 65%;
+  max-width: 55%;
   height: auto;
   align-self: center;
 }
@@ -11175,6 +11182,9 @@ body {
   margin: 0.5rem 0 2rem 0;
 }
 @media (min-width: 768px) {
+  .about-section {
+    padding: 5rem 0 0 0;
+  }
   .about-section .container {
     flex-direction: row;
   }
@@ -11196,38 +11206,9 @@ body {
     font-size: 1.25rem;
   }
 }
-.about-section #slide {
-  position: absolute;
-  top: 0;
-  left: -35vw;
-  width: 35vw;
-  height: 30vh;
-  background: transparent;
-  -webkit-animation: slide 0.8s forwards;
-  -webkit-animation-delay: 1s;
-  animation: slide 0.8s forwards;
-  animation-delay: 1s;
-}
 @keyframes slide {
   100% {
-    left: 64vw;
-  }
-}
-.about-section #slide_left {
-  position: absolute;
-  top: 0;
-  right: -35vw;
-  width: 20vw;
-  height: 30vh;
-  background: transparent;
-  -webkit-animation: slide_left 0.8s forwards;
-  -webkit-animation-delay: 1s;
-  animation: slide_left 0.8s forwards;
-  animation-delay: 1s;
-}
-@keyframes slide_left {
-  100% {
-    right: 70vw;
+    left: 0vw;
   }
 }
 
@@ -11255,7 +11236,7 @@ body {
 
 .signup-section {
   padding: 10rem 0;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.5) 75%, #000 100%);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.029) 0%, rgba(0, 0, 0, 0.4) 75%, rgba(0, 0, 0, 0.6) 100%);
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -11274,6 +11255,7 @@ body {
 
 .contact-section {
   padding-top: 5rem;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 10%, rgba(0, 0, 0, 0.4) 45%, rgba(235, 235, 235, 0.3) 100%);
 }
 .contact-section .card {
   border: 0;
